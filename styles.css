@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+}
+/* navigation bar */
 ul#nav {
     list-style-type: none;
     margin: 0;
@@ -9,6 +13,7 @@ ul#nav {
   
 #nav li {
     float: left;
+    display: inline;
   }
   
 #nav li a {
@@ -26,6 +31,7 @@ ul#nav {
 .active {
   background-color: #04AA6D;
 }
+/* images */
 #imageheader {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -62,4 +68,50 @@ ul#nav {
 }
 #back {
   font-size: 30px;
+}
+#home {
+  text-align: center;
+  font-size: 60px;
+  color: #ddd;
+}
+body {
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Purple to blue gradient */
+  height: 100vh;
+  margin: 0;
+}
+.image-box {
+  display: inline-block;
+  width: 200px; /* Adjust size as needed */
+  text-align: center;
+  background-color: #e0e0e0;
+  padding: 15px;
+  border-radius: 8px;
+  text-decoration: none; /* Removes underline */
+  color: #333; /* Text color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect */
+.image-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling inside the box */
+.image-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.image-box img.loaded {
+  opacity: 1; /* Fade in once loaded */
+}
+/* Text styling */
+.image-box span {
+  font-size: 25px;
+  font-weight: bold;
 }
