@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Media</title>
+</head>
+<body>
+    <a id="back" href="index.html">&larr; Backt to homepage</a>
+    <div class="container">
+        <h1 style="color: white;">Click to start timer for alert</h1>
+        <button id="alertButton">Click Me</button>
+        <div id="timer">5</div> 
+    </div>
+
+        <script>
+        document.getElementById("alertButton").addEventListener("click", function() {
+            const timerElement = document.getElementById("timer");
+            let countdown = 5;
+
+            // Display the timer
+            timerElement.style.display = "block";
+            timerElement.textContent = countdown;
+
+            // Start a countdown
+            const interval = setInterval(function() {
+                countdown--;
+                timerElement.textContent = countdown; // Update timer text
+
+                if (countdown <= 0) {
+                    clearInterval(interval); // Stop the countdown
+                    timerElement.style.display = "none"; // Hide the timer
+                    alert("Alert!"); 
+                }
+            }, 1000); // Interval of 1 second
+        });
+    </script>
+</body>
+</html>

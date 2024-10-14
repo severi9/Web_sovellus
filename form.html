@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Form</title>
+</head>
+<body>
+    <a id="back" href="index.html">&larr; Backt to homepage</a>
+    <div id="form" >
+        <form id="contactForm" action="javascript:void(0);">
+            <p style="text-align: center;">Text form - submit your message</p><br>
+            <label for="name">Name:</label><br>
+            <input type="text" id="fname" name="name" value=""><br><br>
+            <label for="textarea">Text:</label><br>
+            <textarea name="textarea" id="texta"></textarea><br>
+            <input type="submit" value="Submit">
+            <p id="thankYouMessage"></p>
+            </form>
+    </div>
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function() {
+            const name = document.getElementById("fname").value;
+            const thankYouMessage = document.getElementById("thankYouMessage");
+            thankYouMessage.textContent = `Thank you, ${name}, for submitting your message!`;
+            thankYouMessage.style.display = "block"; // Show the message
+        });
+    </script>
+</body>
+</html>
