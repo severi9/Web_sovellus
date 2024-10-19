@@ -2,20 +2,8 @@ Web site url: https://severi9.github.io/Web_sovellus/
 
 HTML: 
 Home page has links to media and form:
+index.hmtl
 
-<a href="imgs.html" class="image-box">
-  <img src="" alt="Image Gallery">
-  <span>Image Gallery</span>
-</a>
-<form id="contactForm" action="javascript:void(0);">
-  <p style="text-align: center;">Text form - submit your message</p><br>
-  <label for="name">Name:</label><br>
-  <input type="text" id="fname" name="name" value=""><br><br>
-  <label for="textarea">Text:</label><br>
-  <textarea name="textarea" id="texta"></textarea><br>
-  <input type="submit" value="Submit">
-  <p id="thankYouMessage"></p>
-</form>    
 
 CSS: 
 Is mostly done in the styles.css file, front page image boxes css:
