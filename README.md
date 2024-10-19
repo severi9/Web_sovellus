@@ -4,7 +4,7 @@ HTML:
 Home page has links to media and form:
 
 <a href="imgs.html" class="image-box">
-  <img src="imgs/image4.jpg" alt="Image Gallery">
+  <img src="" alt="Image Gallery">
   <span>Image Gallery</span>
 </a>
 <form id="contactForm" action="javascript:void(0);">
