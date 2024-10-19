@@ -2,7 +2,7 @@ Web site url: https://severi9.github.io/Web_sovellus/
 
 HTML: 
 Home page has links to media and form:
-index.hmtl
+<a id="back" href="index.html">&larr; Backt to homepage</a>
 
 
 CSS: 
