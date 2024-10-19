@@ -2,12 +2,15 @@ Web site url: https://severi9.github.io/Web_sovellus/
 
 HTML: 
 Home page has links to media and form:
-<a id="back" href="index.html">&larr; Backt to homepage</a>
-
+<!--<a id="back" href="index.html">homepage</a>
+<a href="imgs.html" class="image-box">
+  <img src="imgs/image4.jpg" alt="Image Gallery">
+  <span>Image Gallery</span>
+</a> -->
 
 CSS: 
 Is mostly done in the styles.css file, front page image boxes css:
-.image-box {
+ <!--.image-box {
   display: inline-block;
   width: 200px; 
   text-align: center;
@@ -18,7 +21,7 @@ Is mostly done in the styles.css file, front page image boxes css:
   color: #333; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s, box-shadow 0.3s;
-}
+}-->
 
 JavaScript and Asynchronous Operations: 
 Button with onclick effect with event listener and timer:
